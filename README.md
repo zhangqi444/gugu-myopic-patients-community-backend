@@ -1,4 +1,36 @@
-本项目是Gugu的后端服务器仓库，使用egg-graphql项目模板[egg-graphql-boilerplate](https://github.com/freebyron/egg-graphql-boilerplate)。
+<img src="https://user-images.githubusercontent.com/5424267/119736375-75dd1f00-be32-11eb-8012-ebece6238f7c.png" alt="Gugu logo" width="100" height="100" align="right" />
+
+
+# 咕咕
+> 儿童青少年近视防控患者社区——基于Eggjs+MongoDB的服务器实现
+> 
+> ‼️ **请尽量将本仓库作为示例代码参考，而不是将其用于生产环境**
+
+<p align="left">
+  <img src="https://img.shields.io/badge/node-%3E%3D6.0.0-brightgreen"/>
+  <img src="https://img.shields.io/badge/eggjs-%3E%3D1.20.0-brightgreen"/>
+  <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="Gugu is released under the MIT license." />
+  <img src="https://img.shields.io/badge/maintained%3F-no-red.svg" alt="Gugu is not under maintained anymore." />
+  <img src="https://img.shields.io/badge/ask%20me-anything-1abc9c.svg" alt="Ask Me Anything." />
+</p>
+
+<a href="https://github.com/zhangqi444/gugu-myopic-patients-community-wechat-miniprogram/blob/master/README-zh-CN.md" target="_blank">文档</a>
+|
+<a href="https://github.com/zhangqi444/gugu-myopic-patients-community-wechat-miniprogram/" target="_blank">Doc</a>
+
+## 背景
+儿童青少年是祖国的未来和民族的希望。近年来，由于中小学生课内外负担加重，手机、电脑等带电子屏幕产品（以下简称电子产品）的普及，用眼过度、用眼不卫生、缺乏体育锻炼和户外活动等因素，中国儿童青少年近视率居高不下、不断攀升，近视低龄化、重度化日益严重，已成为一个关系国家和民族未来的大问题。
+
+“儿童青少年近视防控”指在政府、学校、医疗卫生机构、家庭、学生等各方面共同努力下，针对儿童青少年，完善眼健康定期筛查制度、建立视力健康档案，培养健康用眼行为、建设视觉友好环境，并对已经近视者采取科学诊疗与矫治。
+
+更多信息请参考[这里](https://github.com/zhangqi444/gugu-myopic-patients-community-wechat-miniprogram)。
+
+## 技术栈
+
+- [eggjs](https://github.com/eggjs/egg) 
+- [mongodb](https://www.mongodb.com/)
+- [redis](https://redis.io/)
+- [elasticsearch](https://www.elastic.co/)
 
 ## installation
 1. 安装redis
@@ -114,3 +146,24 @@ server {
         }
     }
 ```
+
+### 7. 项目模板
+
+本项目是Gugu的后端服务器仓库，使用egg-graphql项目模板[egg-graphql-boilerplate](https://github.com/freebyron/egg-graphql-boilerplate)。
+
+
+## 更多信息
+
+https://github.com/zhangqi444/gugu-myopic-patients-community-wechat-miniprogram
+
+## 讨论
+
+如您有任何问题，欢迎在项目中提交issue，我会在第一时间给与回复。
+
+## 贡献者
+
+[@zhangqi444](https://github.com/zhangqi444)
+
+## 📄 协议
+
+该项目基于MIT License开源。
