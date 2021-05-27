@@ -3,6 +3,8 @@
 
 # 咕咕
 > 儿童青少年近视防控患者社区——基于Eggjs+MongoDB+GraphQL的服务器实现
+>
+> 相关项目 - [微信小程序](https://github.com/zhangqi444/gugu-myopic-patients-community-wechat-miniprogram) | [CMS](https://github.com/zhangqi444/gugu-myopic-patients-community-cms-admin)
 > 
 > ‼️ **请尽量将本仓库作为示例代码参考，而不是将其用于生产环境**
 
