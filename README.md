@@ -149,7 +149,7 @@ server {
 
 ### 7. 项目模板
 
-本项目是Gugu的后端服务器仓库，使用egg-graphql项目模板[egg-graphql-boilerplate](https://github.com/freebyron/egg-graphql-boilerplate)。
+本项目使用egg-graphql项目模板[egg-graphql-boilerplate](https://github.com/freebyron/egg-graphql-boilerplate)。
 
 
 ## 更多信息
