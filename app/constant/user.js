@@ -1,0 +1,7 @@
+module.exports = {
+  ONBOARDING_STATUS: {
+    ONBOARDED: 'ONBOARDED',
+    VERIFIED: 'VERIFIED',
+    DEFAULT: 'DEFAULT',
+  },
+};

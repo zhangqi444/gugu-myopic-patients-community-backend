@@ -1,0 +1,33 @@
+type ExamRecordResult {
+	_id: ID
+	user: User
+	examRecord: ExamRecord
+	recordedAt: Date
+
+	screenshots: [ String ] 
+	# 备注
+	note: String 
+	result: JSON
+
+	isBlocked: Boolean
+	isDeleted: Boolean
+	createdAt: Date
+	updatedAt: Date
+}
+
+input ExamRecordResultInput {
+	user: ID!
+	examRecord: ID!
+	recordedAt: Date
+
+	screenshots: [ String ] 
+	# 备注
+	note: String 
+	result: JSON
+
+	isBlocked: Boolean
+	isDeleted: Boolean
+	createdAt: Date
+	updatedAt: Date
+}
+

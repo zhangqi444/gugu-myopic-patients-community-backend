@@ -1,0 +1,59 @@
+type UserCredential {
+	clientType: String
+	openId: String
+	unionId: String
+	accessToken: String
+	sessionKey: String # wechat only
+}
+
+enum OnboardingStatus {
+	DEFAULT
+	VERIFIED
+	ONBOARDED
+}
+
+type User {
+	_id: ID
+	isBlocked: Boolean
+	isDeleted: Boolean
+	createdAt: Date!
+	updatedAt: Date!
+	loginedAt: Date
+	nickname: String
+	gender: Int
+	province: String
+	city: String
+	birthYear: String
+	country: String
+	language: String
+	email: String
+	phone: String
+	avatar: String
+	circles: [Circle]
+	commentCount: Int
+	postCount: Int
+	postCommentCount: Int
+	collectCount: Int
+	notificationCount: Int
+	surveyResultCount: Int 
+	examRecordResultCount: Int
+	onboardingStatus: OnboardingStatus
+	# credential: [UserCredential]
+}
+
+input UserLoginPayload {
+  jscode: String
+}
+
+input UserInput {
+	nickname: String
+	gender: Int
+	province: String
+	city: String
+	country: String
+	language: String
+	birthYear: String
+	email: String
+	phone: String
+	avatar: String
+}

@@ -1,0 +1,51 @@
+
+
+type Organization {
+	_id: ID
+	isBlocked: Boolean
+	isVerified: Boolean
+	isDeleted: Boolean
+	createdAt: Date
+	updatedAt: Date
+	name: String
+	alias: [String]
+	avatar: String
+	property: String
+	classification: String
+	otherClassification: [String]
+	province: String
+	phone: String
+	introduction: String
+	registration: String
+	city: String
+	location: String
+	rank: [String]
+	website: String
+	route: String
+	type: String
+}
+
+input OrganizationInput {
+	_id: ID
+	isBlocked: Boolean
+	isVerified: Boolean
+	isDeleted: Boolean
+	createdAt: Date
+	updatedAt: Date
+	name: String!
+	alias: [String]
+	avatar: String
+	property: String
+	classification: String
+	otherClassification: [String]
+	province: String
+	phone: String
+	introduction: String
+	registration: String
+	city: String
+	location: String
+	rank: [String]
+	website: String
+	route: String
+	type: String
+}

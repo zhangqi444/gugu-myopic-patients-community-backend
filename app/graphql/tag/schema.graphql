@@ -1,0 +1,18 @@
+
+type Tag {
+  _id: ID!
+  name: String
+  isDeleted: Boolean
+  isBlocked: Boolean
+  createdAt: Date
+  updatedAt: Date
+}
+
+input TagInput {
+  _id: ID
+  name: String
+  isDeleted: Boolean
+  isBlocked: Boolean
+  createdAt: Date
+  updatedAt: Date
+}

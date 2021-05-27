@@ -1,0 +1,17 @@
+
+type Circle {
+  _id: ID
+  name: String
+  isDeleted: Boolean
+  isBlocked: Boolean
+  createdAt: Date
+  updatedAt: Date
+}
+
+input CircleInput {
+  name: String
+  isDeleted: Boolean
+  isBlocked: Boolean
+  createdAt: Date
+  updatedAt: Date
+}

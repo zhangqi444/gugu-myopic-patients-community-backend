@@ -1,0 +1,40 @@
+input Sort {
+  updatedAt: String
+  createdAt: String
+  recordedAt: String
+  _id: String
+}
+
+input Option {
+  sort: Sort
+  limit: Int
+  skip: Int!
+}
+
+input Condition {
+  isDeleted: Boolean
+  isBlocked: Boolean
+  type: String
+}
+
+input ContextInput {
+  pageType: String
+  subPageType: String
+  clientType: String
+}
+
+input VideoInput {
+	source: String
+	url: String
+	vid: String
+}
+
+input SubDepartmentInput {
+	name: String
+}
+
+input DepartmentInput {
+	name: String
+	location: String
+	subDepartments: [SubDepartmentInput]
+}

@@ -1,0 +1,86 @@
+type Video {
+	source: String
+	url: String
+	vid: String
+}
+
+type CoAuthor {
+	authorType: AuthorType
+	officialUser: OfficialUser
+	expert: Expert
+	doctor: Doctor
+}
+
+enum ArticleType {
+	WIKI
+	DEFAULT
+}
+
+type Article {
+	_id: ID
+	src: String
+	srcType: String
+	mediaType: MediaType
+	type: ArticleType
+
+	coAuthors: [CoAuthor]
+	title: String!
+	content: String!
+	cover: String
+	tags: [Tag]
+	video: Video
+	collectCount: Int
+	thumbCount: Int
+	shareCount: Int
+	visitCount: Int
+	commentCount: Int
+	self: Self
+	comments: [Comment]
+
+	officialUser: OfficialUser
+	expert: Expert
+	doctor: Doctor
+	authorType: AuthorType
+	isBlocked: Boolean
+	isDeleted: Boolean
+	createdAt: Date
+	updatedAt: Date
+}
+
+input CoAuthorInput {
+	authorType: AuthorType
+	officialUser: ID
+	expert: ID
+	doctor: ID
+}
+
+input ArticleInput {
+	_id: ID
+	src: String
+	srcType: String
+	mediaType: MediaType
+	type: ArticleType
+
+	coAuthors: [CoAuthorInput]
+	title: String!
+	content: String
+	images: [String]
+	cover: String
+	tags: [TagInput]
+	video: VideoInput
+	collectCount: Int
+	thumbCount: Int
+	shareCount: Int
+	visitCount: Int
+	commentCount: Int
+
+	officialUser: ID
+	expert: ID
+	doctor: ID
+	authorType: AuthorType
+	isBlocked: Boolean
+	isDeleted: Boolean
+	createdAt: Date
+	updatedAt: Date
+}
+

@@ -1,0 +1,22 @@
+type Collect {
+	_id: ID
+	actor: JSON
+	actorType: ActorType
+	target: JSON
+	targetType: TargetType
+	context: Context
+	createdAt: Date
+	updatedAt: Date
+	isDeleted: Boolean
+	value: Boolean
+}
+
+input CollectInput {
+	actor: ID!
+	actorType: ActorType!
+	target: ID!
+	targetType: TargetType!
+	context: ContextInput
+	value: Boolean!
+}
+

@@ -1,0 +1,52 @@
+type PostComment {
+	_id: ID
+
+	content: String!
+	collectCount: Int
+	thumbCount: Int
+	commentCount: Int
+	self: Self
+
+	officialUser: OfficialUser
+	expert: Expert
+	doctor: Doctor
+	user: User
+	authorType: AuthorType
+	post: Post # 指向该评论所属的文章
+	isNestedComment: Boolean # 是否是评论的回复
+	comment: PostComment # 如果该评论是某评论的回复，指向所属的评论
+	nestedComment: PostComment # 如果该评论是某评论的回复的回复，指向所回复的评论
+
+	securityCheckStatus: SecurityCheckStatus
+
+	isBlocked: Boolean
+	isDeleted: Boolean
+	createdAt: Date
+	updatedAt: Date
+}
+
+input PostCommentInput {
+	_id: ID
+
+	content: String!
+	collectCount: Int
+	thumbCount: Int
+	commentCount: Int
+
+	officialUser: ID
+	expert: ID
+	doctor: ID
+	user: ID 
+	authorType: AuthorType
+
+	post: ID # 指向该评论所属的文章
+	isNestedComment: Boolean # 是否是评论的回复
+	comment: ID # 如果该评论是某评论的回复，指向所属的评论
+	nestedComment: ID # 如果该评论是某评论的回复的回复，指向所回复的评论
+
+	isBlocked: Boolean
+	isDeleted: Boolean
+	createdAt: Date
+	updatedAt: Date
+}
+

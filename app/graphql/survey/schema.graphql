@@ -1,0 +1,33 @@
+type Survey {
+	_id: ID!
+	title: String
+	description: String
+	reference: String
+	cover: String
+	estTime: Int
+	content: JSON
+
+	completeCount: Int
+
+	isBlocked: Boolean
+	isDeleted: Boolean
+	createdAt: Date
+	updatedAt: Date
+}
+
+input SurveyInput {
+	title: String
+	description: String
+	reference: String
+	cover: String
+	estTime: Int
+	content: JSON
+
+	completeCount: Int
+
+	isBlocked: Boolean
+	isDeleted: Boolean
+	createdAt: Date
+	updatedAt: Date
+}
+

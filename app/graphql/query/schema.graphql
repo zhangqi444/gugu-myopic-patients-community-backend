@@ -1,0 +1,100 @@
+
+type Query {
+  article(id: ID!): Article
+  articleRich(id: ID!, userId: ID, option: Option, condition: Condition): Article
+  articles(option: Option!, condition: Condition): [Article]
+  articlesByTags(tags: [String]!, option: Option!, condition: Condition): [Article]
+  articlesByAnyTags(tags: [String]!, option: Option!, condition: Condition): [Article]
+  articlesBySearch(query: String!, option: Option!, condition: Condition): [Article]
+
+  comment(id: ID!): Comment
+  comments(option: Option!, condition: Condition): [Comment]
+  commentsBySelf(userId: ID!, option: Option!, condition: Condition): [Comment]
+  commentsByArticle(id: ID!, userId: ID!, option: Option!, condition: Condition): [Comment]
+  nestedCommentsByComment(articleId: ID!, commentId: ID!, userId: ID!, option: Option!, condition: Condition): [Comment]
+
+  post(id: ID!): Post
+  postRich(id: ID!, userId: ID!): Post
+  posts(option: Option!, userId: ID!, condition: Condition): [Post]
+  postsBySelf(userId: ID!, option: Option!, condition: Condition): [Post]
+  postsByCircles(circles: [ID]!, userId: ID!, option: Option!, condition: Condition): [Post]
+  postsBySearch(query: String!, option: Option!, condition: Condition): [Post]
+
+  postComment(id: ID!): PostComment
+  postComments(option: Option!, condition: Condition): [PostComment]
+  postCommentsBySelf(userId: ID!, option: Option!, condition: Condition): [PostComment]
+  postCommentsByPost(id: ID!, userId: ID!, option: Option!, condition: Condition): [PostComment]
+  nestedPostCommentsByPostComment(postId: ID!, postCommentId: ID!, userId: ID!, option: Option!, condition: Condition): [PostComment]
+
+  tags(option: Option!, condition: Condition): [Tag!]
+  tag(id: ID!): Tag!
+
+  topics(option: Option!, condition: Condition): [Topic!]
+  topic(id: ID!): Topic!
+
+  circles(option: Option!, condition: Condition): [Circle!]
+  circle(id: ID!): Circle!
+
+  officialUsers(option: Option!, condition: Condition): [OfficialUser!]
+  officialUser(id: ID!): OfficialUser!
+
+  organizations(option: Option!, condition: Condition): [Organization!]
+  organization(id: ID!): Organization!
+
+  # AdminUser
+  adminUsers(option: Option!, condition: Condition): [AdminUser!]
+  adminUser(id: ID!): AdminUser!
+  adminUserLogin(email: String!, password: String!): AdminUser
+  adminUserByToken: AdminUser
+
+  # User
+  usersAdmin(option: Option!, condition: Condition): [User]
+  userAdmin(id: ID!): User
+  userLogin(userLoginPayload: UserLoginPayload!): User!
+  userRich(id: ID!): User!
+  # userByToken(clientType: String!, accessToken: String!): User!
+
+  doctors(option: Option!, condition: Condition): [Doctor!]
+  doctor(id: ID!): Doctor!
+
+  experts(option: Option!, condition: Condition): [Expert!]
+  expert(id: ID!): Expert!
+
+  clickstreams(option: Option!, condition: Condition): [Clickstream]
+  clickstream(id: ID!): Clickstream
+
+  thumbs(option: Option!, condition: Condition): [Thumb]
+  thumb(id: ID!): Thumb
+  visits(option: Option!, condition: Condition): [Visit]
+  visit(id: ID!): Visit
+  collects(option: Option!, condition: Condition): [Collect]
+  collect(id: ID!): Collect
+  collectsBySelf(userId: ID!, option: Option!, condition: Condition): [Collect]
+
+  notificationsAdmin(option: Option!, condition: Condition): [Notification]
+  notificationAdmin(id: ID!): Notification
+  notificationsBySelf(userId: ID!, option: Option!, condition: Condition): [Notification]
+  notificationSummary(userId: ID!): Summary
+
+  # ExamRecordResult
+  examRecordResultsAdmin(option: Option!, condition: Condition): [ExamRecordResult!]
+  examRecordResultAdmin(id: ID!): ExamRecordResult
+  examRecordResultsBySelf(userId: ID, option: Option!, condition: Condition): [ExamRecordResult!]
+
+  # ExamRecord
+  examRecords(option: Option!, condition: Condition): [ExamRecord!]
+  examRecord(id: ID!): ExamRecord
+
+  # SurveyResult
+  surveyResultsAdmin(option: Option!, condition: Condition): [SurveyResult!]
+  surveyResultAdmin(id: ID!): SurveyResult
+  surveyResultsBySelf(userId: ID, option: Option!, condition: Condition): [SurveyResult]
+
+  # Survey
+  surveys(option: Option!, condition: Condition): [Survey!]
+  survey(id: ID!): Survey
+
+  # Aliyun
+  aliyunPutSignatureUrl(name: String): AliyunOutput
+  aliyunSignature: AliyunOutput
+}

@@ -1,0 +1,42 @@
+enum ExamRecordType {
+	# 基本检查报告
+	BASIC 
+	# 验光检查报告
+	OPTOMETRY 
+	# 眼科光学生物测量检查报告
+	OPTICAL_BIOMETRY 
+  # 视力
+  VISION
+	# 生长发育
+	GROWTH
+	# 其他检查报告
+	OTHER 
+}
+
+type ExamRecord {
+	_id: ID
+	type: ExamRecordType
+	title: String
+	description: String
+	cover: String
+	content: JSON
+
+	isBlocked: Boolean
+	isDeleted: Boolean
+	createdAt: Date
+	updatedAt: Date
+}
+
+input ExamRecordInput {
+	type: ExamRecordType
+	title: String
+	description: String
+	cover: String
+	content: JSON
+
+	isBlocked: Boolean
+	isDeleted: Boolean
+	createdAt: Date
+	updatedAt: Date
+}
+

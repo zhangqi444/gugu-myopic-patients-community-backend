@@ -1,0 +1,25 @@
+module.exports = {
+  MODEL_NAMES: {
+    ARTICLE: 'Article',
+    COMMENT: 'Comment',
+    POST: 'Post',
+    POST_COMMENT: 'PostComment',
+    CIRCLE: 'Circle',
+    TOPIC: 'Topic',
+    VISIT: 'Visit',
+    THUMB: 'Thumb',
+    COLLECT: 'Collect',
+    USER: 'User',
+    ADMIN_USER: 'AdminUser',
+    DOCTOR: 'Doctor',
+    OFFICIAL_USER: 'OfficalUser',
+    EXPERT: 'Expert',
+    ORGANIZATION: 'Organization',
+    TAG: 'Tag',
+    SURVEY: 'Survey',
+    SURVEY_RESULT: 'SurveyResult',
+    EXAM_RECORD: 'ExamRecord',
+    EXAM_RECORD_RESULT: 'ExamRecordResult',
+    NOTIFICATION: 'Notification',
+  }
+};

@@ -1,0 +1,20 @@
+type Visit {
+	_id: ID
+	actor: JSON
+	actorType: ActorType
+	target: JSON
+	targetType: TargetType
+	context: Context
+	createdAt: Date
+	isDeleted: Boolean
+	value: Boolean
+}
+
+input VisitInput {
+	actor: ID
+	actorType: ActorType
+	target: ID
+	targetType: TargetType
+	context: ContextInput
+}
+

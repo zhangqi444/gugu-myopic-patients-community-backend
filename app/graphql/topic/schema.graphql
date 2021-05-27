@@ -1,0 +1,17 @@
+
+type Topic {
+  _id: ID
+  name: String
+  isDeleted: Boolean
+  isBlocked: Boolean
+  createdAt: Date
+  updatedAt: Date
+}
+
+input TopicInput {
+  name: String
+  isDeleted: Boolean
+  isBlocked: Boolean
+  createdAt: Date
+  updatedAt: Date
+}

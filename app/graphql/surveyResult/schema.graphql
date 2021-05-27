@@ -1,0 +1,27 @@
+type SurveyResult {
+	_id: ID!
+	isCompleted: Boolean!
+	user: User!
+	survey: Survey
+	summary: JSON
+	result: JSON
+
+	isBlocked: Boolean
+	isDeleted: Boolean
+	createdAt: Date
+	updatedAt: Date
+}
+
+input SurveyResultInput {
+	isCompleted: Boolean!
+	user: ID!
+	survey: ID!
+	summary: JSON
+	result: JSON
+
+	isBlocked: Boolean
+	isDeleted: Boolean
+	createdAt: Date
+	updatedAt: Date
+}
+

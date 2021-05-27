@@ -1,0 +1,17 @@
+type AdminUser {
+	_id: ID!
+	isBlocked: Boolean
+	isActive: Boolean
+	isDeleted: Boolean!
+	createdAt: Date!
+	updatedAt: Date!
+	nickname: String
+	gender: Int
+	province: String
+	city: String
+	birthYear: String
+	email: String
+	phone: String
+	password: String
+	avatar: String
+}

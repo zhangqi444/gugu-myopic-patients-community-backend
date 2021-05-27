@@ -1,0 +1,78 @@
+
+
+type Mutation {
+  addTag(tagInput: TagInput!): Tag
+  updateTag(id: ID!, tagInput: TagInput!): Tag
+  deleteTag(id: ID!, tagInput: TagInput): Tag
+
+  addTopicAdmin(topicInput: TopicInput!): Topic
+  updateTopicAdmin(id: ID!, topicInput: TopicInput!): Topic
+  deleteTopicAdmin(id: ID!, topicInput: TopicInput): Topic
+
+  addCircleAdmin(circleInput: CircleInput!): Circle
+  updateCircleAdmin(id: ID!, circleInput: CircleInput!): Circle
+  deleteCircleAdmin(id: ID!, circleInput: CircleInput): Circle
+
+  addOrganization(organizationInput: OrganizationInput!): Organization
+  updateOrganization(id: ID!, organizationInput: OrganizationInput!): Organization
+  deleteOrganization(id: ID!, organizationInput: OrganizationInput): Organization
+
+  addDoctor(doctorInput: DoctorInput!): Doctor
+  updateDoctor(id: ID!, doctorInput: DoctorInput!): Doctor
+  deleteDoctor(id: ID!, doctorInput: DoctorInput): Doctor
+
+  addExpertAdmin(expertInput: ExpertInput!): Expert
+  updateExpertAdmin(id: ID!, expertInput: ExpertInput!): Expert
+  deleteExpertAdmin(id: ID!, expertInput: ExpertInput): Expert
+
+  addOfficialUser(officialUserInput: OfficialUserInput!): OfficialUser
+  updateOfficialUser(id: ID!, officialUserInput: OfficialUserInput!): OfficialUser
+  deleteOfficialUser(id: ID!, officialUserInput: OfficialUserInput): OfficialUser
+
+  addArticle(articleInput: ArticleInput!): Article
+  updateArticle(id: ID!, articleInput: ArticleInput!): Article
+  deleteArticle(id: ID!, articleInput: ArticleInput): Article
+
+  addComment(commentInput: CommentInput!): Comment
+  # updateComment(commentInput: CommentInput!): Comment
+  deleteComment(id: ID!, commentInput: CommentInput): Comment
+
+  addPost(postInput: PostInput!): Post
+  updatePost(id: ID!, postInput: PostInput!): Post
+  deletePost(id: ID!, postInput: PostInput): Post
+
+  addPostComment(postCommentInput: PostCommentInput!): PostComment
+  # updateComment(commentInput: CommentInput!): Comment
+  deletePostComment(id: ID!, postCommentInput: PostCommentInput): PostComment
+
+  addClickstream(clickstreamInput: ClickstreamInput!): Clickstream
+
+  addThumb(thumbInput: ThumbInput!): Thumb
+  addVisit(visitInput: VisitInput!): Visit
+  addCollect(collectInput: CollectInput!): Collect
+
+  addNotificationAdmin(notificationInput: NotificationInput!): Notification
+  updateNotification(id: ID!, notificationInput: NotificationInput!): Notification
+  deleteNotificationAdmin(id: ID!, notificationInput: NotificationInput!): Notification
+  viewNotificationsBySelf(userId: ID!): Boolean
+
+  adminUserLogout: ID
+
+  addExamRecordResult(examRecordResultInput: ExamRecordResultInput!): ExamRecordResult
+  updateExamRecordResult(id: ID!, examRecordResultInput: ExamRecordResultInput!): ExamRecordResult
+  deleteExamRecordResult(id: ID!, examRecordResultInput: ExamRecordResultInput): ExamRecordResult
+
+  addExamRecordAdmin(examRecordInput: ExamRecordInput!): ExamRecord
+  updateExamRecordAdmin(id: ID!, examRecordInput: ExamRecordInput!): ExamRecord
+  deleteExamRecordAdmin(id: ID!, examRecordInput: ExamRecordInput): ExamRecord
+
+  addSurveyResult(surveyResultInput: SurveyResultInput!): SurveyResult
+  updateSurveyResult(id: ID!, surveyResultInput: SurveyResultInput!): SurveyResult
+  deleteSurveyResult(id: ID!, surveyResultInput: SurveyResultInput): SurveyResult
+
+  addSurveyAdmin(surveyInput: SurveyInput!): Survey
+  updateSurveyAdmin(id: ID!, surveyInput: SurveyInput!): Survey
+  deleteSurveyAdmin(id: ID!, surveyInput: SurveyInput): Survey
+
+  onboardSelf(id: ID!, userInput: UserInput!): User!
+}

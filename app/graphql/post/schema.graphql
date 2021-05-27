@@ -1,0 +1,64 @@
+enum PostType {
+	DEFAULT
+}
+
+type Post {
+	_id: ID
+	mediaType: MediaType
+	type: PostType
+
+	title: String!
+	content: String!
+	tags: [Tag]
+	topics: [Topic]
+	circle: Circle
+	collectCount: Int
+	thumbCount: Int
+	shareCount: Int
+	visitCount: Int
+	commentCount: Int
+	self: Self
+	comments: [PostComment]
+
+	officialUser: OfficialUser
+	expert: Expert
+	doctor: Doctor
+	user: User
+	authorType: AuthorType
+
+	securityCheckStatus: SecurityCheckStatus
+
+	isBlocked: Boolean
+	isDeleted: Boolean
+	createdAt: Date
+	updatedAt: Date
+}
+
+input PostInput {
+	_id: ID
+	mediaType: MediaType
+	type: PostType
+
+	title: String!
+	content: String
+	cover: String
+	tags: [ID]
+	topics: [ID]
+	circle: ID!
+	collectCount: Int
+	thumbCount: Int
+	shareCount: Int
+	visitCount: Int
+	commentCount: Int
+
+	officialUser: ID
+	expert: ID
+	doctor: ID
+	user: ID!
+	authorType: AuthorType!
+	isBlocked: Boolean
+	isDeleted: Boolean
+	createdAt: Date
+	updatedAt: Date
+}
+

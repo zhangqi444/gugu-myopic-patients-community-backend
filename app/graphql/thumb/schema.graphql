@@ -1,0 +1,22 @@
+type Thumb {
+	_id: ID
+	actor: JSON
+	actorType: ActorType
+	target: JSON
+	targetType: TargetType
+	context: Context
+	createdAt: Date
+	updatedAt: Date
+	isDeleted: Boolean
+	value: Boolean
+}
+
+input ThumbInput {
+	actor: ID!
+	actorType: ActorType!
+	target: ID!
+	targetType: TargetType!
+	context: ContextInput
+	value: Boolean!
+}
+

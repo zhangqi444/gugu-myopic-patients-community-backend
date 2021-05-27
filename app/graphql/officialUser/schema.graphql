@@ -1,0 +1,47 @@
+
+
+type OfficialUser {
+	_id: ID!
+	isBlocked: Boolean
+	isActive: Boolean
+	isVerified: Boolean
+	isDeleted: Boolean
+	createdAt: Date
+	updatedAt: Date
+	name: String!
+	avatar: String
+	gender: Int
+	province: String
+	city: String
+	organization: Organization
+	birthYear: Date
+	email: String
+	phone: String
+	introduction: String
+	srcType: String
+	src: String
+	tags: [Tag]
+}
+
+input OfficialUserInput {
+	_id: ID
+	isBlocked: Boolean
+	isActive: Boolean
+	isVerified: Boolean
+	isDeleted: Boolean
+	createdAt: Date
+	updatedAt: Date
+	name: String!
+	avatar: String
+	gender: Int
+	province: String
+	city: String
+	organization: OrganizationInput
+	birthYear: Date
+	email: String
+	phone: String
+	introduction: String
+	srcType: String
+	src: String
+	tags: [TagInput]
+}

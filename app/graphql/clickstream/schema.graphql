@@ -1,0 +1,37 @@
+type Clickstream {
+	_id: ID
+	metricsName: String
+	metricsClass: String
+	pageType: String
+	subPageType: String
+	refTag: String
+	deviceType: String
+	value: String
+	createdAt: Date
+	metric: String
+	serviceName: String 
+	methodName: String
+	instance: String
+	dataSet: String # prod, gamma, local, e.g.
+	client: String # GUGU_WECHAT_MINI, GUGU_ADMIN, e.g.
+	freeForm: String
+}
+
+input ClickstreamInput {
+	metricsName: String
+	metricsClass: String
+	pageType: String
+	subPageType: String
+	refTag: String
+	deviceType: String
+	value: String
+	createdAt: Date
+	metric: String
+	serviceName: String
+	methodName: String
+	instance: String
+	dataSet: String # prod, gamma, local, e.g.
+	client: String # GUGU_WECHAT_MINI, GUGU_ADMIN, e.g.
+	freeForm: String
+}
+

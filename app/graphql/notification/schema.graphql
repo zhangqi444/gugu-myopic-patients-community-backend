@@ -1,0 +1,27 @@
+type Notification {
+	_id: ID
+	actor: JSON
+	actorType: ActorType
+	target: JSON
+	targetType: TargetType
+	user: ID
+	context: Context
+	status: String
+	type: String
+	createdAt: Date
+	updatedAt: Date
+	isDeleted: Boolean
+	isBlocked: Boolean
+}
+
+input NotificationInput {
+	# actor: ID
+	# actorType: ActorType
+	# target: ID
+	# targetType: TargetType
+	user: ID!
+	context: ContextInput
+	type: String
+	status: String!
+}
+
