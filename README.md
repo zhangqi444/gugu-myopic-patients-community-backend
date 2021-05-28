@@ -154,10 +154,6 @@ server {
 本项目使用egg-graphql项目模板[egg-graphql-boilerplate](https://github.com/freebyron/egg-graphql-boilerplate)。
 
 
-## 更多信息
-
-https://github.com/zhangqi444/gugu-myopic-patients-community-wechat-miniprogram
-
 ## 讨论
 
 如您有任何问题，欢迎在项目中提交issue，我会在第一时间给与回复。
