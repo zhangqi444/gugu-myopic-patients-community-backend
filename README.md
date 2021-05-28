@@ -70,7 +70,7 @@ npm run dev
 
 在浏览器打开 http://localhost:7001/graphql
 
-## 测试服务器部署
+### 测试服务器部署
 ```shell
 npm run stop-gamma
 npm install
@@ -78,7 +78,7 @@ npm run start-gamma
 ```
 访问 http://localhost:7001/graphql
 
-## 生产服务器部署
+### 生产服务器部署
 ```shell
 npm run stop
 npm install
