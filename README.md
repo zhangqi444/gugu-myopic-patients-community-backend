@@ -2,7 +2,7 @@
 
 
 # Gugu
-> An Eggjs+MongoDB+GraphQL based web server implementation for children myopia control community application.
+> The Eggjs+MongoDB+GraphQL based web server implementation for children myopia control community application.
 >
 > related projects - [WeChat Mini Program](https://github.com/zhangqi444/gugu-myopic-patients-community-wechat-miniprogram) | [CMS](https://github.com/zhangqi444/gugu-myopic-patients-community-cms-admin)
 > 
@@ -42,7 +42,7 @@ Please refer to [this](https://github.com/zhangqi444/gugu-myopic-patients-commun
 - [redis](https://redis.io/)
 - [elasticsearch](https://www.elastic.co/)
 
-## installation
+## Installation
 1. install redis
    1. start redis - `sudo systemctl start redis`
 2. install elasticsearch [RPM](https://www.elastic.co/guide/en/elasticsearch/reference/current/rpm.html)
