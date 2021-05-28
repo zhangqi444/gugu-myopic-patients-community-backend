@@ -16,9 +16,10 @@
   <img src="https://img.shields.io/badge/ask%20me-anything-1abc9c.svg" alt="Ask Me Anything." />
 </p>
 
-<a href="https://github.com/zhangqi444/gugu-myopic-patients-community-wechat-miniprogram/blob/master/README-zh-CN.md" target="_blank">文档</a>
+<a href="https://github.com/zhangqi444/gugu-myopic-patients-community-backend/" target="_blank">Doc</a>
 |
-<a href="https://github.com/zhangqi444/gugu-myopic-patients-community-wechat-miniprogram/" target="_blank">Doc</a>
+<a href="https://github.com/zhangqi444/gugu-myopic-patients-community-backend/blob/master/README-zh-CN.md" target="_blank">中文文档</a>
+
 
 ## 背景
 儿童青少年是祖国的未来和民族的希望。近年来，由于中小学生课内外负担加重，手机、电脑等带电子屏幕产品（以下简称电子产品）的普及，用眼过度、用眼不卫生、缺乏体育锻炼和户外活动等因素，中国儿童青少年近视率居高不下、不断攀升，近视低龄化、重度化日益严重，已成为一个关系国家和民族未来的大问题。
